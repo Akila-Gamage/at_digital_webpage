@@ -1,4 +1,5 @@
 import Faq from "../components/faq/Faq";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Service from "../components/service/Service";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Service />
       <Faq />
+      <Footer />
     </section>
   );
 }
