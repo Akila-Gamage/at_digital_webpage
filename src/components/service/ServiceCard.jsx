@@ -18,7 +18,7 @@ export default function ServiceCard({
           <img src={imgSrc} alt="Service image" />
         </div>
 
-        <div className="col-12 col-md-8 service-details d-flex align-items-end flex-column">
+        <div className="col-12 col-md-8 service-details d-flex align-items-center flex-column">
           <div className="service-content">
             <h2 className="fs-2 pb-3 service-title">{title}</h2>
             <p className="fs-5 service-description">{description}</p>

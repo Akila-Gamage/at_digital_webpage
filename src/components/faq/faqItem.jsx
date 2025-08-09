@@ -15,7 +15,7 @@ export default function FaqItem({ question, answer, isOpen = false }) {
         >
           {question.text}
 
-          <span className="ms-auto d-inline-flex align-items-center faq-toggle-icon">
+          <span className="ms-auto d-inline-flex align-items-center faq-toggle-icon ps-5 ps-md-0">
             <i className="bi bi-plus-lg icon-collapsed" aria-hidden="true" />
             <i className="bi bi-dash-lg icon-expanded" aria-hidden="true" />
           </span>
