@@ -1,5 +1,3 @@
-
-
 import ServiceCard from "./ServiceCard";
 
 export default function Service() {

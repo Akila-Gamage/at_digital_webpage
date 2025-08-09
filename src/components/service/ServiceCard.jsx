@@ -7,7 +7,7 @@ export default function ServiceCard({
   onCtaClick,
 }) {
   return (
-    <section className="service px-5">
+    <section className="service px-2 px-lg-5 ">
       <div
         className={
           `d-flex flex-column flex-md-row justify-content-center align-items-center service-card ` +
@@ -20,7 +20,7 @@ export default function ServiceCard({
 
         <div className="col-12 col-md-8 service-details d-flex align-items-end flex-column">
           <div className="service-content">
-            <h2 className="fs-2 service-title">{title}</h2>
+            <h2 className="fs-2 pb-3 service-title">{title}</h2>
             <p className="fs-5 service-description">{description}</p>
             <div className="mt-auto">
               <button className="btn btn-primary service-btn" onClick={onCtaClick}>
