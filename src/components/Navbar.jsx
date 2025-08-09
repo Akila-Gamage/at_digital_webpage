@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/Logo.png";
 
 export default function Navbar({ onMenu }) {
   return (
     <header className="app-navbar">
       <div className="brand">
-        <img src="src/assets/Logo.png" alt="MyApp Logo" />
+        <img src={logo} alt="MyApp Logo" />
         <NavLink to="/" end></NavLink>
       </div>
       <button className="burger" onClick={onMenu} aria-label="Open menu">
