@@ -13,6 +13,7 @@
   --muted: #9ca3af;
   --accent: #e2f2fe;
   --border: #1f2937;
+  --primary-light: #faf8ff;
 }
 
 * {
@@ -50,7 +51,7 @@ body {
 }
 .burger {
   all: unset;
-  display: none; /* was inline-flex */
+  display: none;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -195,6 +196,96 @@ body {
   color: var(--text);
 }
 
+.faq-container {
+  background: var(--bg);
+  color: var(--text);
+  padding: 60px 152px;
+}
+
+.faq-title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+  color: var(--primary);
+}
+
+#faqAccordion .accordion-button,
+#faqAccordion .accordion-button:focus,
+#faqAccordion .accordion-button.collapsed,
+#faqAccordion .accordion-button:not(.collapsed) {
+  padding: 24px;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  background: var(--primary-light) !important;
+  border-radius: 7px !important;
+  color: var(--primary) !important;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#faqAccordion .accordion-item,
+#faqAccordion .accordion-collapse,
+#faqAccordion .accordion-body {
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 7px !important;
+  background: var(--primary-light) !important;
+  color: var(--text-light) !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#faqAccordion .accordion-button::after {
+  content: none !important;
+  background-image: none !important;
+}
+
+#faqAccordion .accordion-button .icon-expanded {
+  display: none;
+}
+#faqAccordion .accordion-button:not(.collapsed) .icon-expanded {
+  display: inline-block;
+}
+#faqAccordion .accordion-button:not(.collapsed) .icon-collapsed {
+  display: none;
+}
+
+#faqAccordion .accordion-button .icon-collapsed {
+  color: var(--text);
+}
+
+#faqAccordion .faq-toggle-icon i {
+  font-size: 1.5rem;
+}
+
+.footer-container {
+  background: var(--primary);
+  color: var(--text-white);
+  padding: 40px 60px 20px 60px;
+  text-align: center;
+}
+
+.company-description {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.stack-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.stack-item {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-white);
+  margin-bottom: 8px;
+  text-align: start;
+}
+
 @media screen and (max-width: 1200px) {
   .app-navbar {
     padding: 26px 60px;
@@ -222,7 +313,7 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .app-navbar {
     padding: 26px 50px;
   }
@@ -246,13 +337,15 @@ body {
   }
 
   .service-card {
-    padding: 48px 80px;
+    padding: 48px 40px;
   }
 
+  .faq-container {
+    padding: 48px 40px;
+  }
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .app-navbar {
     padding: 26px 40px;
   }
@@ -280,6 +373,13 @@ body {
     padding: 0;
   }
 
+  .service-card {
+    padding: 28px 80px;
+  }
+
+  .faq-container {
+    padding: 48px 40px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -300,6 +400,4 @@ body {
   .hero-card {
     margin: 0px auto 0;
   }
-
-  
 }
