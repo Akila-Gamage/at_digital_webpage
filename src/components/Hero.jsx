@@ -1,8 +1,10 @@
+import hero from '../assets/hero.jpg';
+
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-media">
-        <img className="hero-img" src="src/assets/hero.jpg" alt="Hero" />
+        <img className="hero-img" src={hero} alt="Hero" />
       </div>
       <div className="hero-overlay">
         <div className="hero-card">

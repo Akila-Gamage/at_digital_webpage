@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/Logo.png";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="company-details d-flex flex-column align-items-start col-12 col-lg-6 pb-4 pb-lg-0 pe-0 pe-md-5">
             <img
               className="pb-4"
-              src="src/assets/Logo.png"
+              src={logo}
               alt="company logo"
             />
             <p className="company-description pe-0 pe-md-5">
